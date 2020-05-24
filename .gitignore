@@ -34,4 +34,3 @@
 # Build dir
 .ccls-cache
 *build*
-json
