@@ -8,10 +8,7 @@ using namespace std;
 using json = nlohmann::json;
 
 int main( int argc, char* argv[] ) {
-    cout << "Hello new project!\n";
-    std::ifstream i( "./tests/test.json" );
-    json s;
-    i >> s;
-
+    const auto vec = to_string( "hello", 1, 3.4, 23 );
+    for( const auto& o : vec ) { std::cout << o << '\n'; }
     return 0;
 }
